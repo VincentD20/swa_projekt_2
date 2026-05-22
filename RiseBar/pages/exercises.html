@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cviky – RiseBar</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">Rise<span>Bar</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Otevřít menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="../index.html">Domů</a></li>
+          <li><a href="about.html">O nás</a></li>
+          <li class="has-dropdown">
+            <a href="blog.html">Blog</a>
+            <ul class="dropdown">
+              <li><a href="blog-1.html">Začínáme s kalystenikum</a></li>
+              <li><a href="blog-2.html">Progrese na pull-upy</a></li>
+              <li><a href="blog-3.html">Výživa pro sportovce</a></li>
+            </ul>
+          </li>
+          <li><a href="exercises.html" class="active">Cviky</a></li>
+          <li><a href="plans.html">Tréninkové plány</a></li>
+          <li><a href="progressions.html">Progrese</a></li>
+          <li><a href="nutrition.html">Výživa</a></li>
+          <li><a href="equipment.html">Vybavení</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="community.html">Komunita</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Cviky</h1>
+        <p>Knihovna cviků seřazená podle svalových skupin s popisem techniky a obtížnosti.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="exercises-filter">
+          <button class="filter-btn active" data-filter="all">Vše</button>
+          <button class="filter-btn" data-filter="push">Tlak (Push)</button>
+          <button class="filter-btn" data-filter="pull">Tah (Pull)</button>
+          <button class="filter-btn" data-filter="legs">Nohy</button>
+          <button class="filter-btn" data-filter="core">Střed těla</button>
+        </div>
+
+        <div class="exercises-grid">
+
+          <div class="exercise-card" data-category="push">
+            <div class="exercise-thumb"></div>
+            <div class="exercise-info">
+              <h3>Push-up</h3>
+              <p>Základní tlakový cvik. Zapojuje hrudník, triceps a přední část ramen.</p>
+              <div class="exercise-tags">
+                <span class="tag tag-difficulty-beginner">Začátečník</span>
+                <span class="tag">Hrudník</span>
+                <span class="tag">Triceps</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-card" data-category="push">
+            <div class="exercise-thumb"></div>
+            <div class="exercise-info">
+              <h3>Dip</h3>
+              <p>Pokročilý tlakový cvik na paraletách nebo bradlech. Triceps a dolní hrudník.</p>
+              <div class="exercise-tags">
+                <span class="tag tag-difficulty-intermediate">Středně pokročilý</span>
+                <span class="tag">Triceps</span>
+                <span class="tag">Ramena</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-card" data-category="push">
+            <div class="exercise-thumb"></div>
+            <div class="exercise-info">
+              <h3>Pike Push-up</h3>
+              <p>Varianta push-upu zaměřená na ramena. Příprava na handstand push-up.</p>
+              <div class="exercise-tags">
+                <span class="tag tag-difficulty-intermediate">Středně pokročilý</span>
+                <span class="tag">Ramena</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-card" data-category="pull">
+            <div class="exercise-thumb"></div>
+            <div class="exercise-info">
+              <h3>Pull-up</h3>
+              <p>Král tahových cviků. Záda, biceps a střed těla.</p>
+              <div class="exercise-tags">
+                <span class="tag tag-difficulty-intermediate">Středně pokročilý</span>
+                <span class="tag">Záda</span>
+                <span class="tag">Biceps</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-card" data-category="pull">
+            <div class="exercise-thumb"></div>
+            <div class="exercise-info">
+              <h3>Australian Pull-up</h3>
+              <p>Vodorovný stah pod tyčí. Ideální jako příprava na pull-up.</p>
+              <div class="exercise-tags">
+                <span class="tag tag-difficulty-beginner">Začátečník</span>
+                <span class="tag">Záda</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-card" data-category="pull">
+            <div class="exercise-thumb"></div>
+            <div class="exercise-info">
+              <h3>Muscle-up</h3>
+              <p>Kombinace pull-upu a dipu. Pokročilý skill vyžadující sílu i koordinaci.</p>
+              <div class="exercise-tags">
+                <span class="tag tag-difficulty-advanced">Pokročilý</span>
+                <span class="tag">Záda</span>
+                <span class="tag">Triceps</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-card" data-category="legs">
+            <div class="exercise-thumb"></div>
+            <div class="exercise-info">
+              <h3>Squat</h3>
+              <p>Základní cvik dolní části těla. Čtyřhlavý sval stehenní, hýždě, lýtka.</p>
+              <div class="exercise-tags">
+                <span class="tag tag-difficulty-beginner">Začátečník</span>
+                <span class="tag">Nohy</span>
+                <span class="tag">Hýždě</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-card" data-category="legs">
+            <div class="exercise-thumb"></div>
+            <div class="exercise-info">
+              <h3>Pistol Squat</h3>
+              <p>Dřep na jedné noze. Vyžaduje sílu, rovnováhu a mobilitu.</p>
+              <div class="exercise-tags">
+                <span class="tag tag-difficulty-advanced">Pokročilý</span>
+                <span class="tag">Nohy</span>
+                <span class="tag">Rovnováha</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-card" data-category="core">
+            <div class="exercise-thumb"></div>
+            <div class="exercise-info">
+              <h3>Plank</h3>
+              <p>Základní izometrická poloha pro střed těla. Základ všech pokročilých skills.</p>
+              <div class="exercise-tags">
+                <span class="tag tag-difficulty-beginner">Začátečník</span>
+                <span class="tag">Střed těla</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exercise-card" data-category="core">
+            <div class="exercise-thumb"></div>
+            <div class="exercise-info">
+              <h3>L-sit</h3>
+              <p>Izometrická poloha s nohama v pravém úhlu. Střed těla a hip flexory.</p>
+              <div class="exercise-tags">
+                <span class="tag tag-difficulty-intermediate">Středně pokročilý</span>
+                <span class="tag">Střed těla</span>
+                <span class="tag">Koordinace</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">Rise<span>Bar</span></a>
+        <p>Kalistenikum pro každého.<br />Bez posilovny. Bez výmluv.</p>
+      </div>
+      <nav class="footer-nav">
+        <h4>Navigace</h4>
+        <ul>
+          <li><a href="about.html">O nás</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="exercises.html">Cviky</a></li>
+          <li><a href="plans.html">Tréninkové plány</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <h4>Sekce</h4>
+        <ul>
+          <li><a href="progressions.html">Progrese</a></li>
+          <li><a href="nutrition.html">Výživa</a></li>
+          <li><a href="equipment.html">Vybavení</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="community.html">Komunita</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4>Kontakt</h4>
+        <p>info@risebar.cz</p>
+        <p>Praha, Česká republika</p>
+        <a href="contact.html" class="btn btn-ghost btn-sm">Napsat nám</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 RiseBar. Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
